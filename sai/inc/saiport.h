@@ -151,8 +151,7 @@ typedef enum _sai_port_event_t
 } sai_port_event_t;
 
 /*
- * Defines the port event notification and its
- * associated hardware lane list
+ * Defines the port event notification
  */
 typedef struct _sai_port_event_notification_t {
 
@@ -161,9 +160,6 @@ typedef struct _sai_port_event_notification_t {
 
     /* Port event */
     sai_port_event_t port_event;
-
-   /* Port hardware lane list - [SAI_PORT_ATTR_HW_LANE_LIST] */
-    sai_u32_list_t u32list;
 
 } sai_port_event_notification_t;
 
